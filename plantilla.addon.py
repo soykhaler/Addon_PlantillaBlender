@@ -26,7 +26,7 @@ def main(context):
 class SimpleOperator(bpy.types.Operator):
     """Tooltip"""
     bl_idname = "object.simple_operator"
-    bl_label = "Generate Procedural Sky"
+    bl_label = "Ejecutar automatización"
 
     def execute(self, context):
         main(context)
@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
 class LayoutDemoPanel(bpy.types.Panel):
     """Creates a Panel in the scene context of the properties editor"""
-    bl_label = "EEVEE Procedural Sky Generator"
+    bl_label = "Base para addons"
     bl_idname = "SCENE_PT_layout"
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'
@@ -71,7 +71,7 @@ class LayoutDemoPanel(bpy.types.Panel):
        
        
         # Big render button
-        layout.label(text="Create Procedural Sky: ")
+        layout.label(text="Ejecutar automatización ")
         row = layout.row()
         row.scale_y = 3.0
         row.operator("object.simple_operator")
