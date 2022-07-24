@@ -4,7 +4,7 @@ bl_info = {
     "version": (1, 0),
     "blender": (3, 1, 0),
     "location": "Render",
-    "description": "Generate a Procedural Sky on EEVEE",
+    "description": "Crea una plantilla para crear tus propios addons en blender",
     "warning": "",
     "doc_url": "",
     "category": "Add Mesh",
